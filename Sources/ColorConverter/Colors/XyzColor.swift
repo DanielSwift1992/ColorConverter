@@ -1,9 +1,9 @@
 import Foundation
 
 public struct XyzColor: PaletteColor {
-    let x: Double
-    let y: Double
-    let z: Double
+    public let x: Double
+    public let y: Double
+    public let z: Double
     
     public init(x: Double, y: Double, z: Double) {
         self.x = x

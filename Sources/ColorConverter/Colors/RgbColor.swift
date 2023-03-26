@@ -1,10 +1,10 @@
 import Foundation
 
 public struct RgbColor: PaletteColor {
-    let r: Double
-    let g: Double
-    let b: Double
-    let a: Double
+    public let r: Double
+    public let g: Double
+    public let b: Double
+    public let a: Double
     
     public init(r: Double, g: Double, b: Double, a: Double) {
         self.r = r
