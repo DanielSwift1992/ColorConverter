@@ -2,7 +2,9 @@
 import Foundation
 import UIKit
 
-extension UIColor {
+extension UIColor: PaletteColor { }
+
+public extension UIColor {
     static func oklch(l: Double, c: Double, h: Double) -> UIColor {
         let oklch = OklchColor(l: l / 100, c: c, h: h)
         return OklchToUIColorAdapter()

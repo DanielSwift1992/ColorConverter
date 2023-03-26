@@ -1,9 +1,11 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 13.0, *)
 @available(macOS 10.15, *)
 extension Color: PaletteColor { }
 
+@available(iOS 13.0, *)
 @available(macOS 10.15, *)
 public extension Color {
     static func oklch(l: Double, c: Double, h: Double) -> Color {
