@@ -1,6 +1,9 @@
 import Foundation
 
 public struct Xyz65ToLinierRgbAdapter: PaletteColorAdapter {
+    
+    public init() { }
+    
     public func convert(color xyz: XyzColor) -> RgbColor {
         let r = xyz.x * 3.2409699419045226 - xyz.y * 1.5373831775700939 - 0.4986107602930034 * xyz.z
         let g = xyz.x * -0.9692436362808796 + xyz.y * 1.8759675015077204 + 0.0415550574071756 * xyz.z

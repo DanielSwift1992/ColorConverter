@@ -1,6 +1,9 @@
 import Foundation
 
 public struct LinearRgbToNonlinearRgbAdapter: PaletteColorAdapter {
+    
+    public init() { }
+    
     public func convert(color rgb: RgbColor) -> RgbColor {
         .init(
             r: linearToNonlinear(rgb.r),

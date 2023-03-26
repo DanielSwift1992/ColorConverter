@@ -5,6 +5,8 @@ import SwiftUI
 @available(macOS 10.15, *)
 public struct OklchToSwiftUIColorAdapter: PaletteColorAdapter {
     
+    public init() { }
+    
     public func convert(color oklch: OklchColor) -> Color {
         let p3Color = OklchToP3Adapter()
             .convert(color: oklch)

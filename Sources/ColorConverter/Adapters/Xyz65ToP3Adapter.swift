@@ -1,6 +1,9 @@
 import Foundation
 
 public struct Xyz65ToP3Adapter: PaletteColorAdapter {
+    
+    public init() { }
+    
     public func convert(color xyz: XyzColor) -> P3Color {
         let r = xyz.x * 2.4934969119414263 - xyz.y * 0.9313836179191242 - 0.402710784450717 * xyz.z
         let g = xyz.x * -0.8294889695615749 + xyz.y * 1.7626640603183465 + 0.0236246858419436 * xyz.z

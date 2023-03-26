@@ -1,6 +1,9 @@
 import Foundation
 
 public struct OklchToP3Adapter: PaletteColorAdapter {
+    
+    public init() { }
+    
     public func convert(color oklch: OklchColor) -> P3Color {
         OklchToOklabAdapter()
             .combine(with: OklabToXyz65Adapter())

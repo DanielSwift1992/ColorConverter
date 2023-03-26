@@ -3,6 +3,9 @@ import Foundation
 import UIKit
 
 public struct OklchToUIColorAdapter: PaletteColorAdapter {
+    
+    public init() { }
+    
     public func convert(color oklch: OklchColor) -> UIColor {
         let p3Color = OklchToP3Adapter()
             .convert(color: oklch)

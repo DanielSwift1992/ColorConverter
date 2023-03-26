@@ -1,6 +1,9 @@
 import Foundation
 
 public struct OklabToXyz65Adapter: PaletteColorAdapter {
+    
+    public init() { }
+    
     public func convert(color oklab: OklabColor) -> XyzColor {
         let l = pow(0.9999999984505197 * oklab.l + 0.3963377921737678 * oklab.a + 0.2158037580607588 * oklab.b, 3)
         let m = pow(1.000000008881761 * oklab.l - 0.1055613423236563 * oklab.a - 0.06385417477170588 * oklab.b, 3)

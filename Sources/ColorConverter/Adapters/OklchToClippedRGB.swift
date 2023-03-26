@@ -1,6 +1,9 @@
 import Foundation
 
 public struct OklchToClippedRGBAdapter: PaletteColorAdapter {
+    
+    public init() { }
+    
     public func convert(color oklch: OklchColor) -> RgbColor {
         let rgb = OklchToOklabAdapter()
             .combine(with: OklabToXyz65Adapter())
