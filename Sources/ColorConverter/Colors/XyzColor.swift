@@ -5,9 +5,9 @@ public struct XyzColor: PaletteColor {
     public let y: Double
     public let z: Double
     
-    public init(x: Double, y: Double, z: Double) {
-        self.x = x
-        self.y = y
-        self.z = z
+    public init<T: BinaryFloatingPoint>(x: T, y: T, z: T) {
+        self.x = Double(x)
+        self.y = Double(y)
+        self.z = Double(z)
     }
 }

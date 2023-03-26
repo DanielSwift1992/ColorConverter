@@ -6,10 +6,10 @@ public struct RgbColor: PaletteColor {
     public let b: Double
     public let a: Double
     
-    public init(r: Double, g: Double, b: Double, a: Double) {
-        self.r = r
-        self.g = g
-        self.b = b
-        self.a = a
+    public init<T: BinaryFloatingPoint>(r: T, g: T, b: T, a: T) {
+        self.r = Double(r)
+        self.g = Double(g)
+        self.b = Double(b)
+        self.a = Double(a)
     }
 }
