@@ -13,7 +13,7 @@ view.backgroundColor = .oklch(l: 100, c: 0.5, h: 20)
 
 #### Use adapters directly
 ``` swift
-let oklchColor = OklchColor(l: 100, c: 0.5, h: 20)
+let oklchColor = OklchColor(l: 1, c: 0.5, h: 20)
 let rgbColor = OklchToClippedRGBAdapter().convert(color: oklchColor)
 view.backgroundColor = .init(red: rgbColor.r, green: rgbColor.g, blue: rgbColor.b, alpha: rgbColor.a)
 ```
